@@ -1,0 +1,35 @@
+.product_info {
+	@apply mt-10 space-y-5 sm:mt-16 lg:mt-0;
+
+	hr {
+		@apply my-4;
+	}
+
+	> .title {
+		@apply text-3xl font-bold;
+	}
+
+	> .price {
+		@apply text-2xl;
+	}
+
+	> .description {
+		@apply text-muted-foreground text-sm;
+	}
+
+	> .label {
+		@apply flex items-center gap-x-4;
+
+		> h3 {
+			@apply font-semibold;
+		}
+
+		> .color {
+			@apply size-6 rounded-full border border-gray-600;
+		}
+	}
+
+	> .actions {
+		@apply flex items-start gap-x-2;
+	}
+}

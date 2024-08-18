@@ -1,0 +1,39 @@
+.middle {
+	@apply grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-7 mt-6;
+
+	.header {
+		@apply flex flex-col items-stretch space-y-0 border-b p-4;
+
+		> h3 {
+			@apply text-xl font-medium tracking-[0.1px] line-clamp-1;
+		}
+	}
+
+	> .overview {
+		@apply col-span-1 lg:col-span-3 xl:col-span-4;
+	}
+
+	> .last_users {
+		@apply col-span-1 lg:col-span-3;
+
+		.user {
+			@apply flex items-center mt-5;
+
+			> img {
+				@apply rounded-full;
+			}
+
+			> .info {
+				@apply ml-4 space-y-1 text-sm text-muted-foreground;
+
+				> .name {
+					@apply leading-none text-black font-medium;
+				}
+			}
+
+			.total {
+				@apply ml-auto font-medium;
+			}
+		}
+	}
+}

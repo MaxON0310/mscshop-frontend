@@ -1,0 +1,47 @@
+.header {
+	@apply flex justify-between items-center;
+
+	> h1 {
+		@apply text-2xl font-bold;
+	}
+
+	svg {
+		@apply size-4 mr-2;
+	}
+}
+
+.reviews {
+	@apply grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-4;
+
+	> .review {
+		@apply border rounded-lg p-4;
+
+		> .header {
+			@apply flex justify-between;
+
+			> .user {
+				@apply flex items-center gap-x-4 font-medium;
+
+				> img {
+					@apply rounded-full;
+				}
+			}
+		}
+
+		.delete {
+			@apply -mt-3 text-red-500;
+
+			> svg {
+				@apply size-5;
+			}
+		}
+
+		> .text {
+			@apply text-sm text-muted-foreground mt-1;
+		}
+
+		> .not_found {
+			@apply mt-4;
+		}
+	}
+}

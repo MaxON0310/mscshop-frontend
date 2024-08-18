@@ -1,0 +1,27 @@
+.section {
+	@apply my-24 py-20 mx-auto text-center flex flex-col items-center max-w-4xl space-y-6;
+
+	> .heading {
+		@apply text-4xl font-bold tracking-tight md:text-5xl;
+
+		> span {
+			@apply text-blue-600;
+		}
+	}
+
+	> .description {
+		@apply text-lg text-muted-foreground;
+	}
+
+	button {
+		> svg {
+			@apply size-4 ml-2 transition-all;
+		}
+
+		&:hover {
+			> svg {
+				@apply ml-3;
+			}
+		}
+	}
+}

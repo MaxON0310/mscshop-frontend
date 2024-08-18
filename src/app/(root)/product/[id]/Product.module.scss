@@ -1,0 +1,11 @@
+.product_page {
+	@apply mx-auto max-w-7xl;
+
+	> .content {
+		@apply space-y-7 px-4 py-10 sm:px-6 lg:px-8;
+
+		> .blocks {
+			@apply lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8;
+		}
+	}
+}

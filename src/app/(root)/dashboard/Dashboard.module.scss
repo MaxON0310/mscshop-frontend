@@ -1,0 +1,15 @@
+.wrapper {
+	@apply my-6;
+
+	> .header {
+		@apply flex items-center justify-between mb-4;
+
+		> h1 {
+			@apply text-2xl font-bold;
+		}
+
+		svg {
+			@apply size-4 mr-2;
+		}
+	}
+}
