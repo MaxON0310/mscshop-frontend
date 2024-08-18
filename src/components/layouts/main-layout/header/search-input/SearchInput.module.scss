@@ -1,0 +1,15 @@
+.form {
+	@apply flex items-center relative;
+
+	input {
+		@apply rounded-lg rounded-r-none focus-visible:ring-transparent pr-8;
+	}
+
+	button {
+		@apply rounded-l-none;
+
+		> svg {
+			@apply size-4;
+		}
+	}
+}

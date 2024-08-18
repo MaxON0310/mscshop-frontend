@@ -1,0 +1,11 @@
+.wrapper {
+	@apply flex flex-col h-full;
+
+	> .layout {
+		@apply flex-1;
+
+		> main {
+			@apply mx-5 lg:mx-14;
+		}
+	}
+}

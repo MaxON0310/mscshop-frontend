@@ -1,0 +1,17 @@
+.wrapper {
+	@apply flex flex-col w-full;
+
+	> .layout {
+		> .header {
+			@apply h-[70px] lg:pl-64 fixed inset-y-0 w-full z-[49];
+		}
+
+		> .sidebar {
+			@apply hidden lg:flex h-full w-64 flex-col fixed inset-y-0 z-[50];
+		}
+
+		> main {
+			@apply lg:pl-64 py-[70px] bg-white;
+		}
+	}
+}

@@ -1,0 +1,11 @@
+.header_menu {
+	@apply hidden items-center gap-x-2 ml-auto lg:flex;
+
+	.avatar {
+		@apply rounded-full;
+	}
+
+	.icon {
+		@apply size-4 mr-2;
+	}
+}

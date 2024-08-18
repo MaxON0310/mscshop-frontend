@@ -1,0 +1,11 @@
+.header {
+	@apply p-6 gap-x-4 h-full flex items-center bg-white border-b;
+
+	> .header_menu {
+		@apply flex items-center gap-x-4 ml-auto;
+
+		img {
+			@apply rounded-full;
+		}
+	}
+}

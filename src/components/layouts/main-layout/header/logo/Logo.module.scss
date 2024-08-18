@@ -1,0 +1,7 @@
+.logo {
+	@apply flex items-center gap-x-3 hover:opacity-75 transition-opacity;
+
+	> div {
+		@apply text-2xl font-bold text-blue-600;
+	}
+}

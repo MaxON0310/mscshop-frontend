@@ -1,0 +1,17 @@
+.image_container {
+	@apply grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-6 gap-5;
+
+	> .image_wrapper {
+		@apply relative w-[200px] h-[200px] rounded-md overflow-hidden;
+
+		> img {
+			@apply object-cover;
+		}
+	}
+}
+
+.upload {
+	> svg {
+		@apply size-4 mr-2;
+	}
+}

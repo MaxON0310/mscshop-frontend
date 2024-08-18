@@ -1,0 +1,59 @@
+.cart {
+	@apply h-full flex flex-col;
+
+	.items {
+		@apply flex flex-col w-full flex-1;
+
+		> .item {
+			@apply flex items-center mb-5;
+
+			> .image {
+				@apply relative h-28 w-28 rounded-md overflow-hidden;
+
+				> img {
+					@apply object-cover;
+				}
+			}
+
+			> .right {
+				@apply ml-6;
+
+				> h2 {
+					@apply font-medium line-clamp-1;
+				}
+
+				> p {
+					@apply text-sm text-muted-foreground mt-1;
+				}
+
+				.actions {
+					@apply flex items-center mt-1;
+
+					input {
+						@apply w-10 text-center text-sm;
+					}
+
+					button {
+						@apply size-7;
+
+						svg {
+							@apply size-4;
+						}
+					}
+				}
+			}
+		}
+
+		> .not_found {
+			@apply text-sm text-muted-foreground;
+		}
+	}
+
+	> .total {
+		@apply text-lg font-medium;
+	}
+
+	> button {
+		@apply w-full;
+	}
+}
