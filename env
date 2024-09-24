@@ -1,4 +1,0 @@
-APP_ENV=development
-APP_URL=http://localhost:3000
-APP_DOMAIN=localhost
-SERVER_URL=http://localhost:50303
